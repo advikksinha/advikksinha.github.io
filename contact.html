@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advik Sinha - Business and Finance Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* same styles as before (unchanged) */
+        * {margin:0;padding:0;box-sizing:border-box;}
+        :root {
+            --primary-color:#667eea;--secondary-color:#764ba2;--accent-color:#f093fb;
+            --text-dark:#2d3748;--text-light:#4a5568;--bg-light:#f7fafc;--white:#ffffff;
+            --shadow:0 10px 25px rgba(0,0,0,0.1);--shadow-hover:0 20px 40px rgba(0,0,0,0.15);
+        }
+        [data-theme="dark"] {
+            --primary-color:#9f7aea;--secondary-color:#667eea;--accent-color:#ed64a6;
+            --text-dark:#e2e8f0;--text-light:#cbd5e0;--bg-light:#1a202c;--white:#2d3748;
+        }
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6;color:var(--text-dark);background:linear-gradient(135deg,var(--bg-light) 0%,#ffffff 100%);min-height:100vh;transition:all 0.3s ease;}
+        [data-theme="dark"] body{background:linear-gradient(135deg,#1a202c 0%,#2d3748 100%);}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+        header{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:white;padding:2rem 0;position:relative;overflow:hidden;}
+        header::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');opacity:0.3;}
+        .header-content{text-align:center;position:relative;z-index:2;}
+        .profile-section{display:flex;align-items:center;justify-content:center;gap:2rem;margin-bottom:2rem;}
+        .profile-image{width:120px;height:120px;border-radius:50%;background:linear-gradient(45deg,var(--accent-color),var(--primary-color));display:flex;align-items:center;justify-content:center;font-size:3rem;color:white;box-shadow:var(--shadow);}
+        h1{font-size:3rem;font-weight:700;margin-bottom:0.5rem;background:linear-gradient(45deg,#ffffff,var(--accent-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .subtitle{font-size:1.2rem;opacity:0.9;margin-bottom:2rem;}
+        .contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
+        .contact-link{background:rgba(255,255,255,0.2);color:white;padding:0.8rem 1.5rem;border-radius:25px;text-decoration:none;display:flex;align-items:center;gap:0.5rem;transition:all 0.3s ease;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.3);}
+        .contact-link:hover{background:rgba(255,255,255,0.3);transform:translateY(-2px);}
+        /* rest of styles remain same … */
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div>
+                        <h1>Advik Sinha</h1>
+                        <p class="subtitle">Business & Finance Enthusiast | Freshman at Vista Del Lago</p>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/advik-sinha-16563a304/" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/advikksinha/" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:advik.sinha2011@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Education Section -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="card-title">Vista Del Lago High School</h3>
+                        </div>
+                        <p class="card-description">
+                            <strong>Class of 2029 | Rising Freshman</strong><br>
+                            Current GPA: <strong>4.00/4.125</strong><br><br>
+                            Maintaining excellent academic performance while pursuing advanced coursework and 
+                            developing expertise in business and finance.
+                        </p>
+                    </div>
+
+                    <div class="stanford-section" style="margin: 0; border-radius: 20px;">
+                        <div class="stanford-content" style="padding: 2rem;">
+                            <div class="stanford-logo" style="margin-bottom: 1rem;">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Stanford Business & Finance Program</h3>
+                            <p style="font-size: 1rem; line-height: 1.6; opacity: 0.9;">
+                                Worked under the guidance of <strong>Issam Alzoubi</strong> and <strong>Ashley Lewis</strong> in the Business & Finance Group. 
+                                Developed financial models, market analysis strategies, and investment simulations. Collaborated with teammates 
+                                to present our project to the full program cohort and a judging panel. Attended faculty talks by leading finance 
+                                experts and Stanford professors to deepen my understanding of the current and future landscape of global business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="card-title">Stock Market Risk Analysis with XGBOOST</h3>
+                        </div>
+                        <div class="card-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <p class="card-description">
+                            Applied machine learning using XGBOOST to detect financial risk patterns in stock trading, 
+                            supporting better investment decision-making through predictive analytics.
+                        </p>
+                        <a href="https://github.com/advikksinha" class="button">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h3 class="card-title">Financial Forecasting with VGG16</h3>
+                        </div>
+                        <div class="card-image">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <p class="card-description">
+                            Built a deep learning model leveraging VGG16 architecture to identify patterns in financial data, 
+                            enabling improved forecasting for market trends and investments.
+                        </p>
+                        <a href="https://github.com/advikksinha" class="button">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates Section -->
+            <section class="section">
+                <h2 class="section-title">Certifications & Learning</h2>
+                <div class="cards-grid">
+                    <div class="certificate-card">
+                        <h3 class="certificate-title">Python for Data Science & Business Analytics</h3>
+                        <p class="certificate-issuer">IBM</p>
+                        <p class="certificate-description">
+                            Mastered Python fundamentals including variables, data types, flow control, and functions. 
+                            Explored data analysis with NumPy and Pandas, visualization with Matplotlib, and business-oriented 
+                            applications of data workflows.
+                        </p>
+                        <a href="#" class="button button-secondary">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+
+                    <!-- Removed medical-related one and kept business ones -->
+                    <div class="certificate-card">
+                        <h3 class="certificate-title">Entrepreneurship 1: Developing the Opportunity</h3>
+                        <p class="certificate-issuer">Wharton School of Business</p>
+                        <p class="certificate-description">
+                            Learned to identify and evaluate viable business ideas by focusing on market needs, customer pain points, 
+                            and competitive analysis to differentiate solutions and leverage unique strengths.
+                        </p>
+                        <a href="#" class="button button-secondary">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+
+                    <div class="certificate-card">
+                        <h3 class="certificate-title">Entrepreneurship 2: Launching your Start-Up</h3>
+                        <p class="certificate-issuer">Wharton School of Business</p>
+                        <p class="certificate-description">
+                            Gained practical knowledge in launching start-ups, creating MVPs, designing effective pitches, 
+                            building founding teams, and developing entrepreneurial strategies for success.
+                        </p>
+                        <a href="#" class="button button-secondary">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle i');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggle.className = 'fas fa-moon';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.className = 'fas fa-sun';
+            }
+        }
+    </script>
+</body>
+</html>
