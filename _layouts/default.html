@@ -533,69 +533,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Stanford Section */
-        .stanford-section {
-            background: linear-gradient(135deg, #8B0000, #DC143C, #FF6347);
-            color: white;
-            padding: 4rem 0;
-            margin: 6rem 0;
-            border-radius: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stanford-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stanford-pattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23stanford-pattern)"/></svg>');
-            animation: patternMove 10s linear infinite;
-        }
-
-        @keyframes patternMove {
-            0% { transform: translateX(0) translateY(0); }
-            100% { transform: translateX(20px) translateY(20px); }
-        }
-
-        .stanford-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .stanford-logo {
-            width: 100px;
-            height: 100px;
-            background: var(--glass);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 2rem;
-            font-size: 2.5rem;
-            backdrop-filter: blur(20px);
-            transition: all 0.3s ease;
-        }
-
-        .stanford-logo:hover {
-            transform: scale(1.1) rotate(10deg);
-        }
-
-        /* Scroll Progress */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-            z-index: 1000;
-            transition: width 0.1s ease;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .profile-section {
